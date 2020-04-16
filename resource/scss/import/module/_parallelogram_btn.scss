@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.parallelogram_btn{
+	display:inline-block;
+	a{
+		display:block;
+		min-width:200px;
+		padding:8px 20px;
+		border:1px solid #fff;
+		box-sizing: border-box;
+		text-align: center;
+		font-size:14px;
+		line-height:20px;
+		color:#fff;
+		background-color:rgba(255,255,255,0);
+		transform: skewX(-30deg);
+		transition: background 0.2s linear;
+
+		span{
+			display: inline-block;
+			transform: skewX(30deg);
+		}
+
+		&:hover{
+			background-color:rgba(255,255,255,0.2);
+		}
+	}
+	+.parallelogram_btn{
+		margin-left:10px;
+	}
+}
+
+.parallelogram_btn.is-next{
+	a{
+		position:relative;
+		padding:8px 30px 8px 20px;
+		&::after{
+			position:absolute;
+			display: block;
+			content: "";
+			width:0;
+			height:0;
+			right: 1em;
+			top: 0;
+			bottom:0;
+			margin:auto;
+			border-width: 0.4em 0 0.4em 0.6em;
+			border-style: solid;
+			border-color: transparent transparent transparent #fff;
+			transform: skewX(30deg);
+		}
+	}
+}
