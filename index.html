@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>CSSスタイルセット</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+<body>
+<div class="l-wrapper">
+    <div class="l-wrapper-inner">
+        <sction class="sample_box">
+            <h1 class="sample_box-ttl">
+                ラジオボタン
+            </h1>
+            <div class="sample_box-main">
+                <div class="radio_parts">
+                    <p class="radio_parts-item">
+                        <input type="radio" name="radio_test" value="1" id="radio_test_1">
+                        <label for="radio_test_1">候補1</label>
+                    </p>
+                    <p class="radio_parts-item">
+                        <input type="radio" name="radio_test" value="2" id="radio_test_2">
+                        <label for="radio_test_2">候補2</label>
+                    </p>
+                    <p class="radio_parts-item">
+                        <input type="radio" name="radio_test" value="3" id="radio_test_3" disabled="disabled">
+                        <label for="radio_test_3">候補3</label>
+                    </p>
+                </div>
+            </div>
+        </sction>
+        <sction class="sample_box">
+            <h1 class="sample_box-ttl">
+                チェックボックス
+            </h1>
+            <div class="sample_box-main">
+                <div class="checkbox_parts">
+                    <p class="checkbox_parts-item">
+                        <input type="checkbox" name="checkbox_test" value="1" id="checkbox_test_1">
+                        <label for="checkbox_test_1">候補1</label>
+                    </p>
+                    <p class="checkbox_parts-item">
+                        <input type="checkbox" name="checkbox_test" value="2" id="checkbox_test_2">
+                        <label for="checkbox_test_2">候補2</label>
+                    </p>
+                    <p class="checkbox_parts-item">
+                        <input type="checkbox" name="checkbox_test" value="3" id="checkbox_test_3" disabled="disabled">
+                        <label for="checkbox_test_3">候補3</label>
+                    </p>
+                </div>
+            </div>
+        </sction>
+
+        <sction class="sample_box">
+            <h1 class="sample_box-ttl">
+                プルダウン
+            </h1>
+            <div class="sample_box-main">
+                <div class="select_parts">
+                    <p class="select_parts-label">ラベル</p>
+                    <select name="select_test">
+                        <option value="">↓選択してください</option>
+                        <option value="1">選択肢１</option>
+                        <option value="2">選択肢２</option>
+                        <option value="3">選択肢２</option>
+                    </select>
+                </div>
+            </div>
+        </sction>
+
+    </div>
+</div>
+<script src="./public/js/index.js"></script>
+</body>
+</html>

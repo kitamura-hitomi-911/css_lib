@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.sample_box{
+	.sample_box-ttl{
+		font-size:20px;
+		line-height:30px;
+	}
+
+	&+.sample_box{
+		margin-top:20p;
+	}
+}
